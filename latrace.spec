@@ -1,6 +1,6 @@
 Name:           latrace
 Version:        0.5.11
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        LD_AUDIT feature frontend for glibc 2.4+
 Group:          Development/Debuggers
 License:        GPLv3+
@@ -39,6 +39,9 @@ chmod 0755 %{buildroot}/%{_libdir}/libltaudit.so.%{version}
 %{_mandir}/man1/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.5.11-5
+- Mass rebuild 2013-12-27
+
 * Sun Mar 10 2013 Peter Robinson <pbrobinson@fedoraproject.org> 0.5.11-4
 - Enable building on ARM as it's supported, cleanup spec
 
